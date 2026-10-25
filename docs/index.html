@@ -3,8 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rakesh Kandhi — Resume / CV</title>
-  <meta name="description" content="Software Engineer with 2.5+ years of experience in production-grade full-stack applications and AI-powered solutions.">
+  
+  <!-- Primary Meta Tags -->
+  <title>Rakesh Kandhi — Software Engineer | Full-Stack &amp; AI Engineering</title>
+  <meta name="title" content="Rakesh Kandhi — Software Engineer | Full-Stack &amp; AI Engineering">
+  <meta name="description" content="Rakesh Kandhi is a Software Engineer with 2.5+ years of experience specializing in full-stack web applications, scalable APIs, AI agents, LLM orchestration, Python, FastAPI, TypeScript, and React.">
+  <meta name="keywords" content="Rakesh Kandhi, Software Engineer, Full-Stack Developer, AI Engineer, FastAPI, Python, React, Next.js, TypeScript, LLM, AI Agents, PostgreSQL, Claude Code, Hyderabad">
+  <meta name="author" content="Rakesh Kandhi">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://rakeshkandhi.github.io/RAKESH_KANDHI/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://rakeshkandhi.github.io/RAKESH_KANDHI/">
+  <meta property="og:title" content="Rakesh Kandhi — Software Engineer | Full-Stack &amp; AI Engineering">
+  <meta property="og:description" content="Software Engineer with 2.5+ years of experience building production-grade full-stack systems, scalable APIs, and AI-powered solutions.">
+  <meta property="og:image" content="https://rakeshkandhi.github.io/RAKESH_KANDHI/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Rakesh Kandhi Resume">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://rakeshkandhi.github.io/RAKESH_KANDHI/">
+  <meta name="twitter:title" content="Rakesh Kandhi — Software Engineer | Full-Stack &amp; AI Engineering">
+  <meta name="twitter:description" content="Software Engineer with 2.5+ years of experience building production-grade full-stack systems, scalable APIs, and AI-powered solutions.">
+  <meta name="twitter:image" content="https://rakeshkandhi.github.io/RAKESH_KANDHI/og-image.png">
+
+  <!-- Structured Data: JSON-LD Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://rakeshkandhi.github.io/RAKESH_KANDHI/#person",
+        "name": "Rakesh Kandhi",
+        "jobTitle": "Software Engineer",
+        "email": "rakesh.kandhi@outlook.com",
+        "telephone": "+918247772456",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kondapur, Hyderabad",
+          "addressRegion": "Telangana",
+          "postalCode": "500084",
+          "addressCountry": "IN"
+        },
+        "url": "https://rakeshkandhi.github.io/RAKESH_KANDHI/",
+        "sameAs": [
+          "https://github.com/rakeshkandhi",
+          "https://www.linkedin.com/in/rakeshkandhi"
+        ],
+        "knowsAbout": [
+          "Python",
+          "TypeScript",
+          "JavaScript",
+          "FastAPI",
+          "React 19",
+          "Next.js",
+          "PostgreSQL",
+          "AI Agents",
+          "LLM Integration",
+          "Azure Container Instances",
+          "Redis",
+          "SQLAlchemy",
+          "Prisma ORM",
+          "Docker"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://rakeshkandhi.github.io/RAKESH_KANDHI/#website",
+        "url": "https://rakeshkandhi.github.io/RAKESH_KANDHI/",
+        "name": "Rakesh Kandhi — Resume & Portfolio",
+        "publisher": {
+          "@id": "https://rakeshkandhi.github.io/RAKESH_KANDHI/#person"
+        }
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -38,7 +118,7 @@
       justify-content: space-between;
       align-items: center;
       gap: 1rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       padding-bottom: 1.5rem;
       border-bottom: 1px solid var(--border);
     }
@@ -84,6 +164,36 @@
     .btn-secondary:hover {
       background: #334155;
     }
+    .view-toggle {
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .toggle-group {
+      display: inline-flex;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      padding: 0.25rem;
+    }
+    .toggle-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 0.4rem 0.85rem;
+      border-radius: 0.35rem;
+      font-size: 0.825rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .toggle-btn.active {
+      background: var(--primary);
+      color: white;
+    }
     .preview-container {
       width: 100%;
       max-width: 900px;
@@ -97,6 +207,49 @@
       width: 100%;
       height: 1050px;
       border: none;
+    }
+    .text-view {
+      display: none;
+      padding: 2.5rem;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+    .text-view.active {
+      display: block;
+    }
+    .text-view h2 {
+      font-size: 1.25rem;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .text-view h2:first-of-type { margin-top: 0; }
+    .text-view h3 {
+      font-size: 1.05rem;
+      margin-top: 1rem;
+      margin-bottom: 0.25rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .text-view .role-meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+    .text-view ul {
+      margin-left: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .text-view li {
+      margin-bottom: 0.4rem;
+      font-size: 0.925rem;
+    }
+    .text-view strong {
+      color: white;
     }
     footer {
       margin-top: 2rem;
@@ -122,26 +275,109 @@
         </svg>
         Download PDF
       </a>
-      <a href="https://github.com/rakeshkandhi/RAKESH_KANDHI" class="btn btn-secondary">
+      <a href="https://github.com/rakeshkandhi/RAKESH_KANDHI" class="btn btn-secondary" target="_blank" rel="noopener">
         <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
         </svg>
         GitHub
       </a>
-      <a href="https://www.linkedin.com/in/rakeshkandhi" class="btn btn-secondary">
+      <a href="https://www.linkedin.com/in/rakeshkandhi" class="btn btn-secondary" target="_blank" rel="noopener">
         LinkedIn
       </a>
     </div>
   </header>
 
+  <div class="view-toggle">
+    <span style="font-size:0.875rem; color:var(--text-muted);">View format:</span>
+    <div class="toggle-group">
+      <button class="toggle-btn active" id="btn-pdf" onclick="switchView('pdf')">📄 PDF View</button>
+      <button class="toggle-btn" id="btn-text" onclick="switchView('text')">📝 Semantic Web View</button>
+    </div>
+  </div>
+
   <main class="preview-container">
-    <iframe class="pdf-viewer" src="resume.pdf" type="application/pdf">
+    <iframe id="pdf-view" class="pdf-viewer" src="resume.pdf" type="application/pdf">
       <p>Your browser does not support embedded PDFs. <a href="resume.pdf">Download the PDF instead</a>.</p>
     </iframe>
+
+    <article id="text-view" class="text-view">
+      <h2>Professional Summary</h2>
+      <p>Software Engineer with 2.5+ years of experience building production-grade full-stack applications and AI-powered solutions. Experienced in developing scalable APIs, AI agent workflows, LLM integrations, and backend services using Python, TypeScript, and React. Focused on reliable AI experiences, system integration, and delivering maintainable software in fast-paced engineering environments.</p>
+
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, TypeScript, JavaScript, SQL, Bash</li>
+        <li><strong>AI &amp; LLM Engineering:</strong> Claude, OpenAI, LLM Integration, Prompt Engineering, Structured Outputs, Embeddings, RAG, AI Agents, Multi-Agent Orchestration, Tool Calling, MCP</li>
+        <li><strong>Frontend Engineering:</strong> React 19, Next.js, Vite, TanStack Query, React Hook Form, Zod, Tailwind CSS, shadcn/ui, Radix UI, TipTap, React Flow</li>
+        <li><strong>Backend Engineering:</strong> FastAPI, Pydantic, asyncio, SQLAlchemy 2.0 (async), Node.js, Express.js, REST APIs, OpenAPI, OAuth 2.0, RBAC</li>
+        <li><strong>Data &amp; Databases:</strong> PostgreSQL, Redis/Valkey, Prisma ORM, Alembic, Schema Design, Data Modeling</li>
+        <li><strong>Cloud, DevOps &amp; Observability:</strong> Azure Container Instances, Azure Blob Storage, Managed Identity, Docker Compose, GitHub Actions, structlog, Lefthook, Cloudflare Tunnel</li>
+        <li><strong>AI Development Tools:</strong> Claude Code, Cursor CLI, Subagent Workflows, Agent Hooks &amp; Guardrails</li>
+      </ul>
+
+      <h2>Experience</h2>
+      <h3>Software Development Engineer - I <span>Sep 2025 – Present</span></h3>
+      <p class="role-meta">RVAI Global (Acquihired TYNYBAY) &bull; Continuous tenure since April 2024 &bull; On-site</p>
+      <ul>
+        <li>Lead contributor (<strong>57%</strong> of <strong>2,900+</strong> commits, <strong>160+</strong> merged PRs) to <strong>NRILegal</strong> CRM; built asynchronous automation layer with <strong>asyncio</strong> for SLA tracking, escalations, and webhook replay across a <strong>FastAPI</strong> backend and <strong>React TypeScript</strong> frontend.</li>
+        <li>Engineered module-scoped <strong>RBAC</strong>, immutable audit logging, <strong>GDPR</strong> erasure, and <strong>Argon2</strong> authentication with refresh-token rotation; maintained strict schema consistency across <strong>150+</strong> Alembic migrations.</li>
+        <li>Built batch execution infrastructure for <strong>Badger</strong> (AI QA platform), dispatching isolated <strong>Azure Container Instances</strong> jobs via <strong>Taskiq/Redis</strong> with HMAC-signed callbacks; maintained backend validated with <strong>mypy --strict</strong> and <strong>pytest</strong>.</li>
+        <li>Designed provider-neutral agent runtime supporting <strong>Claude Code</strong> and <strong>Cursor CLI</strong> adapters, orchestrating multi-agent reviewer workflows across <strong>Vertex AI, Anthropic, and OpenAI</strong> (<strong>Dobby</strong>).</li>
+      </ul>
+
+      <h3>Software Development Engineer - I <span>Apr 2024 – Aug 2025</span></h3>
+      <p class="role-meta">TYNYBAY (now RVAI Global) &bull; On-site</p>
+      <ul>
+        <li>Developed full-stack <strong>Warehouse Management CRM</strong> using <strong>React.js, Node.js, Express.js</strong>, implementing <strong>RBAC</strong> and relational data models with <strong>PostgreSQL</strong> and <strong>Prisma ORM</strong>.</li>
+        <li>Solely engineered <strong>Homesify</strong> real estate platform from scratch to production with <strong>Next.js</strong>, integrating <strong>Google Maps API</strong>, CDN optimization, and automated technical SEO.</li>
+        <li>Developed and optimized RESTful APIs for <strong>MLOFLO</strong> mortgage application platform using <strong>Python, Node.js, and Express.js</strong> with <strong>React.js</strong> and <strong>MongoDB</strong>; built automated intake ticketing bot.</li>
+        <li>Resolved critical production issues through root-cause analysis and performance tuning within Agile bi-weekly sprint cycles.</li>
+      </ul>
+
+      <h2>Projects</h2>
+      <h3>NRILegal <span>Jul 2026 – Present</span></h3>
+      <p class="role-meta">FastAPI, React 19, PostgreSQL, SQLAlchemy 2.0, Alembic, Azure, Docker, Claude Code</p>
+      <ul>
+        <li>Lead contributor to legal CRM and case management platform owning workflows from enquiry to engagement letters and payments.</li>
+        <li>Built async SLA tracking, escalation clocks, rule-based notifications, and HMAC webhook verification.</li>
+        <li>Module-scoped RBAC, audit logging, GDPR erasure, Argon2 authentication, and bulk Excel import with 150+ Alembic migrations.</li>
+      </ul>
+
+      <h3>Badger <span>2026 – Present</span></h3>
+      <p class="role-meta">Python, FastAPI, Next.js, Azure Container Instances, Claude Code, PostgreSQL, Redis</p>
+      <ul>
+        <li>Batch execution run infrastructure for AI code review platform via Azure Container Instances and Taskiq/Redis.</li>
+        <li>Provider-neutral agent runtime with Claude Code and Cursor CLI adapters with capability gating and multi-agent reviewers.</li>
+      </ul>
+
+      <h3>Education &amp; Certifications</h3>
+      <p><strong>ST. Martin's Engineering College, Hyderabad</strong> — B.Tech. in Computer Science and Engineering (AI &amp; ML), April 2024</p>
+      <p><strong>Claude Certified Architect -- Foundations</strong> — Anthropic (2026)</p>
+    </article>
   </main>
 
   <footer>
     <p>Maintained by <a href="https://github.com/rakeshkandhi">Rakesh Kandhi</a> &bull; Built with Tectonic &bull; Automated with GitHub Pages</p>
   </footer>
+
+  <script>
+    function switchView(type) {
+      const pdf = document.getElementById('pdf-view');
+      const text = document.getElementById('text-view');
+      const btnPdf = document.getElementById('btn-pdf');
+      const btnText = document.getElementById('btn-text');
+      if (type === 'pdf') {
+        pdf.style.display = 'block';
+        text.classList.remove('active');
+        btnPdf.classList.add('active');
+        btnText.classList.remove('active');
+      } else {
+        pdf.style.display = 'none';
+        text.classList.add('active');
+        btnPdf.classList.remove('active');
+        btnText.classList.add('active');
+      }
+    }
+  </script>
 </body>
 </html>

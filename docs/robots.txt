@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rakeshkandhi.github.io/RAKESH_KANDHI/sitemap.xml
