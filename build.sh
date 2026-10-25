@@ -86,6 +86,8 @@ if [[ ! -f "$COMPILED_PDF" ]]; then
     exit 1
 fi
 mv "$COMPILED_PDF" "$ACTIVE_PDF"
+mkdir -p "${SCRIPT_DIR}/docs"
+cp "$ACTIVE_PDF" "${SCRIPT_DIR}/docs/resume.pdf"
 
 # ── Summary ──────────────────────────────────────────────────────
 SIZE="$(du -h "$ACTIVE_PDF" | awk '{print $1}')"
