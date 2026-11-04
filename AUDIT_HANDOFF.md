@@ -82,7 +82,7 @@
 ## Structural Changes Made to Resume
 
 1. **2 pages → 1 page** — eliminated duplicate Projects section entirely
-2. **Two employer entries → one**: `Software Development Engineer I | RVAI Global (formerly TYNYBAY) | April 2024 – Present`
+2. **Two employer entries → one**: `Software Development Engineer I | RVAI Global (Acquired TYNYBAY) | April 2024 – Present`
 3. **Experience moved ABOVE Skills** — work first, tools second
 4. **7 bullets** covering: Insurance RAG → Dobby → NRILegal AI → NRILegal backend → Badger → Homesify → MLOFLO
 5. **Skills cleaned**: Removed Claude Code, Cursor CLI, TipTap, Radix, shadcn/ui, Lefthook, Cloudflare Tunnel, React Hook Form, React Flow, structlog, Valkey, MCP, Subagent Workflows, Agent Hooks & Guardrails
