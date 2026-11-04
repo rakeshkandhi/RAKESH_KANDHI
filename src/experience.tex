@@ -3,23 +3,16 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{SOFTWARE DEVELOPMENT ENGINEER - I}{September 2025 -- Present}
-{RVAI Global (Acquihired TYNYBAY)}{On-site}
+{Software Development Engineer I}{April 2024 -- Present}
+{RVAI Global (formerly TYNYBAY)}{Hyderabad}
 \resumeItemListStart
-\resumeItem{Lead contributor (\textbf{57\%} of \textbf{2,900+} commits, \textbf{160+} merged PRs) to \textbf{NRILegal} CRM; built asynchronous automation layer with \textbf{asyncio} for SLA tracking, escalations, and webhook replay across a \textbf{FastAPI} backend and \textbf{React TypeScript} frontend.}
-\resumeItem{Engineered module-scoped \textbf{RBAC}, immutable audit logging, \textbf{GDPR} erasure, and \textbf{Argon2} authentication with refresh-token rotation; maintained strict schema consistency across \textbf{150+} Alembic migrations.}
-\resumeItem{Built batch execution infrastructure for \textbf{Badger} (AI QA platform), dispatching isolated \textbf{Azure Container Instances} jobs via \textbf{Taskiq/Redis} with HMAC-signed callbacks; maintained backend validated with \textbf{mypy --strict} and \textbf{pytest}.}
-\resumeItem{Designed provider-neutral agent runtime supporting \textbf{Claude Code} and \textbf{Cursor CLI} adapters, orchestrating multi-agent reviewer workflows across \textbf{Vertex AI, Anthropic, and OpenAI} (\textbf{Dobby}).}
-\resumeItemListEnd
-
-\resumeSubheading
-{SOFTWARE DEVELOPMENT ENGINEER - I}{April 2024 -- August 2025}
-{TYNYBAY (now RVAI Global)}{On-site}
-\resumeItemListStart
-\resumeItem{Developed full-stack \textbf{Warehouse Management CRM} using \textbf{React.js, Node.js, Express.js}, implementing \textbf{RBAC} and relational data models with \textbf{PostgreSQL} and \textbf{Prisma ORM}.}
-\resumeItem{Solely engineered \textbf{Homesify} real estate platform from scratch to production with \textbf{Next.js}, integrating \textbf{Google Maps API}, CDN optimization, and automated technical SEO.}
-\resumeItem{Developed and optimized RESTful APIs for \textbf{MLOFLO} mortgage application platform using \textbf{Python, Node.js, and Express.js} with \textbf{React.js} and \textbf{MongoDB}; built automated intake ticketing bot.}
-\resumeItem{Resolved critical production issues through root-cause analysis and performance tuning within Agile bi-weekly sprint cycles.}
+\resumeItem{Built a production \textbf{RAG-based claims processing chatbot} for a multinational insurance company, using \textbf{Azure Document Intelligence} for document parsing, section-based chunking, and \textbf{Cosmos DB} for vector storage; implemented \textbf{Claude Sonnet} with \textbf{tool calling} for data retrieval, top-K vector search, retry logic (max 3), and human-in-the-loop escalation.}
+\resumeItem{Designed and built \textbf{Dobby}, a provider-neutral \textbf{LLM orchestration framework} supporting \textbf{Claude, OpenAI, and Vertex AI} with tool calling abstraction, structured output parsing, streaming, token usage tracking, retry/fallback across providers, and conversation memory management; adopted across \textbf{10+ internal and 2+ client projects}.}
+\resumeItem{Built \textbf{Claude-powered AI features} for \textbf{NRILegal} (legal CRM for a multi-country law firm, 200+ users): document summarization via \textbf{structured outputs}, AI-drafted client responses with human-in-the-loop review, and \textbf{LLM-based mail classification} for automated service routing with manager approval.}
+\resumeItem{Engineered the \textbf{NRILegal} backend: asynchronous automation layer using \textbf{asyncio} for SLA tracking, escalations, and webhook replay; \textbf{HMAC-verified} integrations with Azure Communication Services and DocuSeal; module-scoped \textbf{RBAC}, immutable audit logging, \textbf{GDPR} erasure, and \textbf{Argon2} authentication with refresh-token rotation across a \textbf{FastAPI} backend and \textbf{React TypeScript} frontend.}
+\resumeItem{Built execution infrastructure for \textbf{Badger} (AI QA platform): dispatched isolated \textbf{Azure Container Instances} batch jobs via \textbf{Taskiq/Redis} with HMAC-signed callbacks and automated teardown; designed provider-neutral agent runtime with \textbf{Claude Code} and \textbf{Cursor CLI} adapters; runs identified critical security vulnerabilities with suggested patches.}
+\resumeItem{Solely developed \textbf{Homesify}, a real estate platform with \textbf{20,000+ listings} from scratch to production using \textbf{Next.js}, integrating \textbf{Google Maps API}, CDN optimization, and automated technical SEO for search discoverability.}
+\resumeItem{Optimized API performance for \textbf{MLOFLO} mortgage platform by consolidating redundant API calls and removing unnecessary aggregations; fixed critical infinite-loop production bug in employment portal; built automated ticketing bot processing \textbf{20--30 daily tickets} to Jira, replacing fully manual intake.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
