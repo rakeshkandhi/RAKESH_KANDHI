@@ -16,7 +16,6 @@
   \input{glyphtounicode}
   \pdfgentounicode=1
 \fi
-
 % Custom font
 \usepackage[default]{lato}
 
@@ -43,6 +42,7 @@
 \titleformat{\section}{
   \vspace{-4pt}\bfseries\raggedright\large
 }{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+\titlespacing*{\section}{0pt}{5pt}{10pt}
 
 %-------------------------%
 % Custom commands
@@ -64,16 +64,8 @@
 %-----------SKILLS-----------%
 \input{src/skills}
 
-%-----------EDUCATION-----------%
+%-----------EDUCATION AND CERTIFICATIONS-----------%
 \input{src/education}
-
-%-----------CERTIFICATIONS-----------%
-
-\section{Certifications}
-\resumeSubHeadingListStart
-
-    \resumeSubheading{Claude Certified Architect -- Foundations}{2026}{Anthropic}{}
-\resumeSubHeadingListEnd
 
 %-------------------------------------------%
 

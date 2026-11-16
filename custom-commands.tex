@@ -34,8 +34,12 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt, parsep=0pt]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt, parsep=0pt, topsep=1pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \definecolor{Black}{RGB}{0, 0, 0}
 \newcommand{\seticon}[1]{\textcolor{Black}{\csname #1\endcsname}}
+% Project sub-heading inside an Experience entry: bold name | italic stack
+\newcommand{\resumeProject}[2]{
+  \vspace{1pt}\item[]\small\textbf{#1} $|$ \textit{#2}\vspace{-5pt}
+}
